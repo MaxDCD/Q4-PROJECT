@@ -7,45 +7,135 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>MAX | Home</title>
+       <link rel="icon" type="image/x-icon" href="file:///C:/Users/bmdiestroaquino/Downloads/MAX%20(2).png">
+
 <style>
+
+   body {
+    background: url(https://c4.wallpaperflare.com/wallpaper/855/425/200/formula-1-mclaren-mclaren-mp4-marlboro-ayrton-senna-hd-wallpaper-preview.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat center center/cover;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
 
   a {
     pading: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: ;
   }
 
-  header {
-    background: ;
-    padding: 1px;
+
+  .background {
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    background-image: url(https://t4.ftcdn.net/jpg/03/76/12/17/360_F_376121740_3BmJiey5HE4fniakNIo4g61KL4TeLjnE.jpg);
+    background-image: 100%;
+    padding: 15px;
   }
 
-  body {
-    background: url(https://c4.wallpaperflare.com/wallpaper/855/425/200/formula-1-mclaren-mclaren-mp4-marlboro-ayrton-senna-hd-wallpaper-preview.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+
+  .container {
+    max-width: 1440px;
+    margin: 10 auto;
+    width: 100%;
+    padding: 20px; 
+    border-radius: 10px;
+    background:white;
+  }
+ 
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin-right:30px;
+  }
+
+  ul li {
+    margin: 0 1rem;
+  }
+
+
+  ul li a {
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    color: black;
+    border-radius: 2.5px;
+  }
+
+  ul li a.YELLOW:hover {
+    color: #FFDE59;
+  }
+
+  ul li a.GREEN:hover {
+    color: #00BF63;
+  }
+  ul li a.BLUE:hover {
+    color: #004AAD;
+  }
+  ul li a.ORANGE-RED:hover {
+    color: #ff2e00;
+  }
+
+  .ORANGE-RED,  {
+    margin-left: 100px;
+  }
+
+  .projectlist {
+    font-size: 25px;
   }
 
 </style>
 </head>
 <body>
-  <header>
+
+  <script>
+      window.alert("🏁 | Welcome to my ICT Portfolio! (2023-2024)")
+  </script>
+
+  <header class="background">
     <div class="container">
       <nav>
         <div class="logo">
-          <img src="" alt="">
-          <h2>Maxine</h2>
+          <img src="file:///C:/Users/bmdiestroaquino/Downloads/MAX%20(2).png" alt="logo" width="100px">
         </div>
-          <ul>
-            <li><a href="page1">PROJECT I</a></li>
-            <li><a href="page2">PROJECT II</a></li>
-            <li><a href="page3">PROJECT III</a></li>
-          </ul>
+          <div class="projectlist">
+            <ul>
+              <li><a href="page1.html" class="YELLOW"><strong>SECTOR I</strong></a></li>
+              <li><a href="page2.html" class="GREEN"><strong>SECTOR II</strong></a></li>
+              <li><a href="page3.html" class="BLUE"><strong>SECTOR III</strong></a></li>
+              <li><strong>|</strong></li>
+              <li><a href="page4.html" class="ORANGE-RED"><strong>What's Next?</strong></a></li>
+            </ul>
+          </div>
+        <button onclick="redirectToSite()" class="btn btn-lg text-light" style="margin-right: 30px; background-color: #ff2e00;">SIGN OUT</button>
+            <script>
+                function redirectToSite() {
+                    window.location.href = 'index.html';
+                }
+            </script>
       </nav>
     </div>
   </header>
 
+  <div class="box">
+    
+  </div>
 
 </body>
 </html>
