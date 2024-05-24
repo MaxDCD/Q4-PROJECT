@@ -13,11 +13,12 @@
 
    body {
     background: url(https://c4.wallpaperflare.com/wallpaper/855/425/200/formula-1-mclaren-mclaren-mp4-marlboro-ayrton-senna-hd-wallpaper-preview.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat center center/cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     min-height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
   }
+
 
 
   a {
@@ -39,7 +40,7 @@
 
   .container-fluid {
     max-width: 1440px;
-    margin: 10 auto;
+    margin: 10;
     width: 100%;
     padding: 20px; 
     border-radius: 10px;
@@ -103,14 +104,14 @@
   .container {
     border-radius: 10px;
     border: 5px solid orangered;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     padding: 10px;
-    width: 600px;
+    width: 700px;
     height: auto;
-    position: fixed;
-    bottom: 10px;
+    position: relative;
+    top: 400px;
     right: 0;
-    margin-right: 30px;
+    margin-right: 70px;
   }
 
   a.senna {
@@ -120,6 +121,40 @@
   a.senna:hover {
     color: #ff2e00;
   }
+
+  .senna-img {
+   border-style: dashed;
+   border-color: #ff2e00;
+   border-width: 10px;
+   border-radius: 10px;
+   background-color: white;
+   margin-bottom: 100px;
+ }
+
+ .images {
+     float: left;
+     margin-left: 70px;
+     margin-top: 300px;
+
+ }
+
+
+a.mclaren {
+  color: black;
+}
+
+a.mclaren:hover {
+  color: #FF8000;
+}
+
+a.track { 
+  color: #ff2e00;
+ }
+
+ a.track:hover {
+  opacity: 0.8px;
+ }
+
 
 </style>
 </head>
@@ -154,19 +189,58 @@
     </div>
   </header>
 
-<div class="container">
-  <div class="content">
-    <h2>🏁| Welcome to my Portfolio! 🏎️💨</h2>
-      <p> Again, welcome to my Senna-themed site! Here is listed all my wonderful projects (named as SECTORS) made throughout this school year ranging from 1st to 3rd quarter (this portfolio is my 4th quarter project). To explore, click any of the SECTORS listed on the navbar above!</p>
+
+   <div class="images">
+     <div class="w3-content w3-section" style="max-width:500px">
+            <img src="https://i.pinimg.com/564x/bd/38/99/bd389936c5859f0d6a1bd968927d0257.jpg" class="senna-img" id="aryton" alt="senna" width="400">
+            <img src="https://i.pinimg.com/564x/b5/b1/67/b5b167f71f301f09d6bf249b6246d78b.jpg" class="senna-img" id="aryton" alt="senna" width="400">
+            <img src="https://i.pinimg.com/564x/de/1b/41/de1b41e7beb2f52bbe3e8e73d04b9ed7.jpg" class="senna-img" id="aryton" alt="senna" width="400">
+            <img src="https://i.pinimg.com/474x/f0/ff/34/f0ff34bb43391f7fe95960b18892a0d2.jpg" class="senna-img" id="aryton" alt="senna" width="400">
+
+        </div>
+
+        <script>
+        
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("senna-img");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 3000);
+        }
+
+        </script>
+    </div>
+
+
+    <div class="container">
+      <div class="content">
+        <h2>🏁| Welcome to my Portfolio! 🏎️💨</h2>
+          <p> Again, welcome to my Senna-themed site! Here is listed all my <i>wonderful</i> projects (named as SECTORS) made throughout this school year ranging from <strong><u>1st to 3rd quarter</u></strong> <i>(this portfolio is my 4th quarter project)</i>. </p>
+
+          <center><p><i>To explore, click any of the <strong>SECTORS</strong> listed on the navbar above!</i></p></center>
 
           <br>
 
-      <h3> A little bit more about this site... </h3>
-        <p> <i> <strong><font style="font-size: 25px;"> W</font>hy is this the theme?</strong></i> Well, the theme of my website is <strong><a href="https://www.formula1.com/en/drivers/hall-of-fame/Ayrton_Senna.html" class="senna">Aryton Senna</a></strong>, a legendary Brazilian Formula 1 driver with 3 WDCs (World Drivers' Championship) who passed away 30 years ago (May 1, 1994) during the San Marino Grand Prix. He was known to dominate the Monaco track, where he won 6 races, making him the "King of Monaco". As the Monaco Grand Prix is 2 days near (May 26, 2024), I took inspiration from Seb Vettel's track marathon for Senna at Imola, Vettel driving Aryton's infamous Mclaren 1993 car at Imola as well, and Mclaren's release of their new Senna tribute livery for the upcoming Monaco GP. And so, I decided to dedicate this website to not only my project and grade, but to the legend Aryton Senna as a way to tribute him as well and to make his legacy unforgettable in my book. </p>
-  </div>
-</div>
+          <h4><center>A little bit more about this site... </center></h4>
+            <p> <i> <strong><font style="font-size: 25px; color: #ff2e00;"> W</font>hy is this the theme?</strong></i> Well, the theme of my website is <i>the man, the myth, and the incredible</i> <u><strong><a href="https://www.formula1.com/en/drivers/hall-of-fame/Ayrton_Senna.html" class="senna">Aryton Senna</a></strong></u>, a legendary Brazilian Formula 1 driver with 3 WDCs (World Drivers' Championship) who passed away <i>30 years ago</i> (May 1, 1994) during the San Marino Grand Prix. He was known to dominate the Monaco track, where he won <u><strong>6</strong> races</u>, making him the <strong>"<u>King of Monaco</u>"</strong>.</p>
 
-  </div>
+            <p>As the Monaco Grand Prix is 2 days near (May 26, 2024), I took inspiration from <strong><a href="https://www.formula1.com/en/drivers/hall-of-fame/Sebastian_Vettel.html" class="senna">Sebastian Vettel's</a></strong> <a href="https://senna.com/en/corrida-de-rua-promovida-por-sebastian-vettel-com-apoio-da-senna-brands-em-imola-mobiliza-pilotos/" class="track">Imola track marathon for Senna</a> and him driving Aryton's infamous <strong><a href="https://www.sportscarmarket.com/profile/1993-mclaren-cosworth-ford-mp4-8a-formula-one" class="mclaren">Mclaren 1993 car</u></a></strong> around the Imola track, and Mclaren's release of their new <strong><a href="https://www.mclaren.com/racing/heritage/formula-1/senna30-celebrating-ayrton-senna/" class="senna">Senna livery</a></strong> and <a href="https://www.mclarenstore.com/collections/monaco-collection?gad_source=1&gclid=CjwKCAjw9cCyBhBzEiwAJTUWNYqvAvBNpggx3bPag5jv1i6hATM1uFcNahZR-6aGIUhCFrF9rl4UARoC3doQAvD_BwE" class="mclaren"><strong>merchandise</strong></a> for the upcoming Monaco GP. And so, I decided to dedicate this website to not only my project and grade, but to the legend Aryton Senna as a way to tribute him as well and to make his legacy unforgettable in my book. </p>
+      </div>
+    </div>
+
+
+<br>
+<br>
+
+ <footer style="background: url(https://picfiles.alphacoders.com/122/122672.jpg); background-size:100%; background-repeat: no-repeat; padding: 130px; margin-top: 500px;"></footer>
 
 </body>
 </html>
